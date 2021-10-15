@@ -2,7 +2,7 @@
 You can contribute to this repo by adding Coding Questions with Solutions in any programming language
 
 # Hacktoberfest 2021
-![img](https://embed-fastly.wistia.com/deliveries/49bd387c40e2c5aada92abdf973bc46d.webp?image_crop_resized=960x540)
+![img](https://hacktoberfest.digitalocean.com/share-card.png)
 
 A repository where you can upload any coding question with solutions in any language. Feel free to add your code here :)
 
