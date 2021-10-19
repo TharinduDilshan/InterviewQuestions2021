@@ -1,4 +1,3 @@
-from math import cos, radians
 from statistics import mean, stdev
 from numpy import array, cov
 import matplotlib.pyplot as plt
