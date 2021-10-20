@@ -1,0 +1,138 @@
+Q1 What is serialization?
+When we want to transport an object through a network, then we have to convert the object into a stream of bytes. The process of converting an object into a stream of bytes is called Serialization. For an object to be serializable, it should implement ISerialize Interface. De-serialization is the reverse process of creating an object from a stream of bytes.
+
+Q2 Can we use “this” command within a static method?
+We can’t use ‘This’ in a static method because we can only use static variables/methods in a static method.
+
+Q3. Define Constructors
+A constructor is a member function in a class that has the same name as its class. The constructor is automatically invoked whenever an object class is created. It constructs the values of data members while initializing the class.
+
+Q7. What is Jagged Arrays?
+The Array which has elements of type array is called jagged Array. The elements can be of different dimensions and sizes. We can also call jagged Array as an Array of arrays.
+
+Q8. What is the difference between ref & out parameters?
+An argument passed as ref must be initialized before passing to the method whereas out parameter needs not to be initialized before passing to a method.
+
+Q9. What is the use of ‘using’ statement in C#?
+The ‘using’ block is used to obtain a resource and process it and then automatically dispose of when the execution of the block completed.
+
+Q10. What is serialization?
+When we want to transport an object through a network, then we have to convert the object into a stream of bytes. The process of converting an object into a stream of bytes is called Serialization. For an object to be serializable, it should implement ISerialize Interface. De-serialization is the reverse process of creating an object from a stream of bytes.
+
+Q11. Can we use “this” command within a static method?
+We can’t use ‘This’ in a static method because we can only use static variables/methods in a static method.
+
+Q12. What is the difference between constants and read-only?
+Constant variables are declared and initialized at compile time. The value can’t be changed afterward. Read-only is used only when we want to assign the value at run time.
+
+Q13. Distinguish between Continue and Break Statement?
+Ans- Using break statement you can ‘jump out’ of the loop whereas while making use of continue statement you can jump over an iteration and continue the loop execution.
+
+Example (Break Statement):
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+using System;
+using System.Collections;
+using System.Linq;
+using System.Text;
+ 
+namespace break_example{
+Class break_Stmnt{
+public static void main(String args[]){
+for(int i=0;i<=6;i++)
+{
+if(i==5)
+{
+break;
+}
+Console.Readline("The number is +i");
+}
+}
+}
+Output:
+
+the number is 0;
+the number is 1;
+the number is 2;
+the number is 3;
+the number is 4;
+
+Example (Continue Statement):
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+using System;
+using System.Collections;
+using System.Linq;
+using System.Text;
+ 
+namespace continue_example{
+Class continue_Stmnt{
+public static void main(String args[]){
+for(int i=0;i<=6;i++)
+{
+if(i==5)
+{
+continue;
+}
+Console.Readline("The number is +i");
+}
+}
+}
+Output:
+
+the number is 0;
+the number is 1;
+the number is 2;
+the number is 3;
+the number is 5;
+
+Q45. What are Events?
+Ans- Events in C# follow a concept where it consists of a Publisher, Subscriber, Notification and a handler. You can think of an event as nothing but an encapsulated delegate.
+
+Example:
+
+1
+2
+public Delegate void TestEvent();
+public TestEvent TestEvent1;
+Q46. Explain Synchronous and Asynchronous Operations?
+Ans- Synchronization is a way of creating a thread-safe code where only a single thread will access the code in a given time. A synchronous call waits for completion of method and then continous the program flow. Synchronous programming adversely affects the UI operations that normally happens when user tries to perform time-consuming operations since only one thread is used.
+
+In Asynchronous operation, the method call immediately returns allowing the program to perform other operations while the method called completes its share of work in certain circumstances.
+
+Q47. Explain Async and Await?
+Ans- Async and Await keywords are mostly used for creating asynchronous methods in C#
