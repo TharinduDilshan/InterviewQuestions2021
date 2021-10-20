@@ -1,0 +1,36 @@
+DECLARE
+
+    v_COUNTRY_ID COUNTRIES.COUNTRY_ID%TYPE := 'ENG';
+    v_COUNTRY_NAME COUNTRIES.COUNTRY_NAME%TYPE := 'England';
+    v_REGION_ID REGIONS.REGION_ID%TYPE;
+    v_REGION_NAME REGIONS.REGION_NAME%TYPE := 'USA';
+    v_COUNT PLS_INTEGER;
+
+BEGIN
+
+    SELECT COUNT(COUNTRY_NAME)
+    INTO v_COUNT
+    FROM COUNTRIES
+    WHERE COUNTRY_NAME = v_COUNTRY_NAME;
+    
+    IF (v_COUNT = 0) THEN
+        
+        SELECT REGION_ID
+        INTO v_REGION_ID
+        FROM REGIONS
+        WHERE REGION_NAME = v_REGION_NAME;
+        
+        INSERT INTO COUNTRIES
+        VALUES (v_COUNTRY_ID, v_COUNTRY_NAME, v_REGION_ID);
+        COMMIT;
+    
+    ELSE
+    
+        DBMS_OUTPUT.PUT_LINE('Country Already Exists');
+    
+    END IF;
+
+END;
+
+--Output
+--Country Already Exists
