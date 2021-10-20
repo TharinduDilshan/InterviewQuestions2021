@@ -37,4 +37,5 @@ array_reverse()
 array_search()
 array_intersect()
 11.What is needed to be able to use image function?
+ye
 GD library is needed to be able to execute image functions.
