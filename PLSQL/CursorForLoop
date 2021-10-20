@@ -1,0 +1,35 @@
+DECLARE
+
+    v_DEPT_ID EMPLOYEES.DEPARTMENT_ID%TYPE := 32;
+    
+    CURSOR CUR_EMP_DETAILS
+    IS
+    SELECT employee_ID, salary, hire_date FROM EMPLOYEES WHERE DEPARTMENT_ID = v_DEPT_ID;
+    
+BEGIN
+    
+    FOR rec_EMPINFO IN CUR_EMP_DETAILS LOOP
+        
+        DBMS_OUTPUT.PUT_LINE ('Employee ID: ' || rec_EMPINFO.EMPLOYEE_ID);
+        DBMS_OUTPUT.PUT_LINE ('Salary: ' || rec_EMPINFO.SALARY);
+        DBMS_OUTPUT.PUT_LINE ('Hire DatIN e: ' || rec_EMPINFO.HIRE_DATE);
+        DBMS_OUTPUT.PUT_LINE ('-------------------------------');
+    
+    END LOOP;
+
+EXCEPTION
+
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Some error occured' || SQLERRM);
+
+END;
+
+--Output
+--Employee ID: 456
+--Salary: 78000
+--Hire Date: 25-MAY-01
+---------------------------------
+--Employee ID: 236
+--Salary: 65000
+--Hire Date: 12-DEC-99
+---------------------------------
