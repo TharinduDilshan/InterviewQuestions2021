@@ -1,0 +1,40 @@
+2. What is “PEAR “ in PHP?
+PEAR is a framework and repository for reusable PHP components. PEAR means PHP Extension and Application Repository. It extends PHP and provides a higher level of programming for web developers.
+3. how to submit a Form without a submit button.
+On OnClick event of a label in the form, a JavaScript function can be called to submit the form.5. What are magic methods ?
+PHP magic constants are predefined constants which changes on the basis of their use. They start with a double underscore (__) and end with a double underscore (__).
+Various Magic Methods used in PHP 5 are:
+__construct() __destruct() __set() __get() __call() __toString() __sleep() __wakeup() __isset() __unset() __autoload() __clone().
+Check 15 Basic Symfony interview questions and Answers
+6. How can we display the output directly to the browser?
+To be able to display the output directly to the browser, we have to use the special tags
+<?=$variable; ?>.
+7. What does isset() function?
+The isset() function checks if the variable is defined and not null.
+8. How many types of an array are there in PHP?
+There are three types of an array in PHP:
+i. Indexed array.
+ii. Associative array.
+iii. Multidimensional array.
+Join Digital Marketing Internship at Suppliers Planet
+9. Explain PHP data types
+PHP supports the following data types:
+String.
+Integer.
+Float (floating-point numbers — also called double)
+Boolean.
+Array.
+Object.
+NULL.
+10. Explain some of the PHP array functions?
+There are many array functions in PHP:
+array()
+array_change_key_case()
+array_chunk()
+count()
+sort()
+array_reverse()
+array_search()
+array_intersect()
+11.What is needed to be able to use image function?
+GD library is needed to be able to execute image functions.
