@@ -1,0 +1,14 @@
+num =  int(input())
+
+length = len(str(num))
+cubeSum = 0
+tem = num
+
+while tem > 0:
+    cubeSum = cubeSum +  (tem % 10) ** length
+    tem = tem // 10
+    
+if cubeSum == num:
+    print("Great, I am armstrong number")
+if not cubeSum == num:
+    print("Alas, I am not a armstrong number. Try again!")
