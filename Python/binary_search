@@ -1,0 +1,33 @@
+# Python Program for Binary search
+
+def BinarySearch (arr, l, r, x):
+    if r >= l:
+ 
+        mid = l + (r - l) // 2
+        #returns the mid if the element is present at mid itself
+        if arr[mid] == x:
+            return mid
+            
+        #If element is smaller than the mid, then it will check on left side of the mid  
+        elif arr[mid] > x:
+            return binarySearch(arr, l, mid-1, x)
+            
+        #else it will check on right side of the mid 
+        else:
+            return binarySearch(arr, mid + 1, r, x)
+    #When element is not present in the array,it will return -1
+    else:
+        return -1
+ 
+arr = [ 4, 8, 15, 20, 35 ]
+x = 35
+ 
+
+result = BinarySearch(arr, 0, len(arr)-1, x)
+ 
+if result != -1:
+    print ("The element is present at the index: % d" % result)
+else:
+    print ("The element is not present in  the array")
+    
+Output: The element is present at the index: 4
