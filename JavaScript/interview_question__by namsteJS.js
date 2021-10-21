@@ -115,7 +115,8 @@
 
 // fig- L8,7a that orange color box represent the reference to the lexical environment to the parent so along with the memory space of variable and function we also get lexical environment of the parent(that orange thing) . 
 
-
+// (8) Enumerate the differences between Java and JavaScript?
+// Java is a complete programming language. In contrast, JavaScript is a coded program that can be introduced to HTML pages. These two languages are not at all inter-dependent and are designed for different intent. Java is an object-oriented programming (OOPS) or structured programming languages like C++ or C, whereas JavaScript is a client-side scripting language.
 
 
 

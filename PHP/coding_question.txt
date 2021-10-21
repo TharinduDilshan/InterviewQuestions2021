@@ -39,3 +39,17 @@ array_intersect()
 11.What is needed to be able to use image function?
 ye
 GD library is needed to be able to execute image functions.
+12.What are the popular frameworks in PHP?
+CakePHP
+CodeIgniter
+Yii 2
+Symfony
+Zend
+Laravel
+13.What are the data types use in PHP?
+Scalar types
+Compound types
+Special types
+14.How to do single and multi line comment in PHP?
+Using // (C++ style single line comment)
+Using # (Unix Shell style single line comment)
