@@ -1,4 +1,4 @@
-package Inheritance;
+package Abstraction;
 
 public class Student extends Person {
     private String ownerName;

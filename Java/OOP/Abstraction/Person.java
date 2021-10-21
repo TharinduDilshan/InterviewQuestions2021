@@ -1,4 +1,5 @@
-package Inheritance;
+package Abstraction;
+
 
 public abstract class Person {
     private String firstName;
