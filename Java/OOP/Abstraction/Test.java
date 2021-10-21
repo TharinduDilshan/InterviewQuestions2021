@@ -1,7 +1,7 @@
-package Inheritance;
+package Abstraction;
 
 public class Test {
-    public void main(String[] args){
+    public static void main(String[] args){
         Person teacher1 = new Teacher("John", "Tarbet", "Sri Lanka", "Science");
         Person teacher2 = new Teacher("Ann", "Tarbet", "Australia", "Maths");
 

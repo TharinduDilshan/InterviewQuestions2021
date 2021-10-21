@@ -1,4 +1,4 @@
-package Inheritance;
+package Abstraction;
 
 public class Teacher extends Person {
     private String subject;
