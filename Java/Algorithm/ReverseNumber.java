@@ -1,5 +1,4 @@
 //Reverse the given Numeric Value
-package sampleproject.webautomation;
 
 class ReverseNumber {
 
