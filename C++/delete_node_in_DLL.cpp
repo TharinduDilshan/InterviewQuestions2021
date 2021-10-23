@@ -44,7 +44,7 @@ bool list::deleteNode(string target)
         delete pCur;                 // delete target node
         success = true;              
     }
-    // Update the counter
+    // Update the length
     length--;
  
     return success;
