@@ -3,4 +3,8 @@
 Install R
 - To install R, go to https://cloud.r-project.org/ and download the latest version of R for Windows, Mac or Linux.
 - When you have downloaded and installed R, you can run R on your computer.
-- Install RStudio as an IDE.
+
+Install RStudio
+- RStudio is an IDE which was designed to help you be more productive with R.
+- Go to https://www.rstudio.com/products/rstudio/download/ .
+- Choose the latest version of RStudio and install.
