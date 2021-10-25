@@ -1,0 +1,6 @@
+- R is a popular programming language used for statistical computing and graphical presentation.
+
+Install R
+- To install R, go to https://cloud.r-project.org/ and download the latest version of R for Windows, Mac or Linux.
+- When you have downloaded and installed R, you can run R on your computer.
+- Install RStudio as an IDE.
