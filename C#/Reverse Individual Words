@@ -3,17 +3,15 @@
 //Output : olleH dlroW
 
 
-
-using System; 
+using System;
+using System.Collections.Generic;
+ 
+class GFG
+{
 public static void reverseWords(string str)
 { 
-    Stack<char> st = new Stack<char>();
- 
-    // Traverse given string and push
-    // all characters to stack until
-    // we see a space.
-    
-    
+    Stack<char> st = new Stack<char>(); //Defining a Char Stack to store reverse of all words
+   
     for (int i = 0; i < str.Length; ++i) //Run for loop till the length of String
     {
         if (str[i] != ' ') //Until we find a Space in our String 
