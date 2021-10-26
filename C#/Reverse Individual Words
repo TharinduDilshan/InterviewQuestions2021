@@ -1,0 +1,46 @@
+//Reverse Individual Words from given string without changing the order of string.
+//Input : Hello World
+//Output : olleH dlroW
+
+
+using System;
+using System.Collections.Generic;
+ 
+class GFG
+{
+public static void reverseWords(string str)
+{ 
+    Stack<char> st = new Stack<char>(); //Defining a Char Stack to store reverse of all words
+   
+    for (int i = 0; i < str.Length; ++i) //Run for loop till the length of String
+    {
+        if (str[i] != ' ') //Until we find a Space in our String 
+        {
+            st.Push(str[i]); //Traverse given string and push all characters to stack until
+        }
+ 
+        else
+        {
+            while (st.Count > 0) //Check while the count of new Stack is Greater than 0
+            {
+                Console.Write(st.Pop()); // When we see a space, we print contents of stack.
+ 
+            }
+            Console.Write(" "); //Print Space after printing the content 
+        }
+    }
+ 
+    while (st.Count > 0) //Since there may not be space after last word.
+    {
+        Console.Write(st.Pop());    // Then print the content of stack
+ 
+    }
+}
+ 
+
+public static void Main(string[] args) //Driver Code
+{
+    string str = "Geeks for Geeks";
+    reverseWords(str);
+}
+}
