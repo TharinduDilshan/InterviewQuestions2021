@@ -1,0 +1,40 @@
+//Find First Repeated Character in a String
+//Input-HelloGeeks
+//Output-l
+
+
+
+using System;
+using System.Collections.Generic;
+ 
+class GFG
+{
+public static char firstRepeating(char[] str) //In this function we will print the first repeated character in str[]
+{
+    HashSet<char> h = new HashSet<char>();  // Creates an empty hashset
+ 
+    for (int i = 0; i <= str.Length - 1; i++) // Using for loop Traverse the input array from left to right
+    {
+        char c = str[i]; //Set c as first character of string
+ 
+        if (h.Contains(c)) //// If element is already present in hash set then update x and then break
+        {
+            return c;
+        }
+ 
+        else // Else add element to hash set
+        {
+            h.Add(c);
+        }
+    }
+ 
+    return '\0';
+}
+ 
+public static void Main(string[] args) // Driver Code
+{
+    string str = "geeksforgeeks";
+    char[] arr = str.ToCharArray();
+    Console.WriteLine(firstRepeating(arr));
+}
+}
